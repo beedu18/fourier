@@ -1,6 +1,6 @@
 # Fourier Series
 
-Visualizing various fourier series wave forms.
+Visualizing various fourier series wave forms using epicycles.
 
 1. Sawtooth Wave
 
