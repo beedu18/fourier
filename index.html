@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fourier Transformation</title>
+
+    <script src="./libraries/p5.js"></script>
+    <script src="./libraries/p5.dom.js"></script>
+    <style>
+        body {
+            margin:0px;
+            padding:0;
+            overflow: hidden;
+        }
+        canvas {
+            margin:auto;
+        }
+
+        #panel {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id = 'panel'>
+        <span id='c_info'>Circles: 1<br></span>
+        <input type="range" min="1" max="1000" step="1" value="2" id="circle">
+        <br><br>
+        <b>Select Wave Variation</b> <br><br>
+        <input type="radio" name="options" id="square" checked="checked"> Square Wave<br>
+        <input type="radio" name="options" id="saw"> Sawtooth Wave<br>
+        <input type="radio" name="options" id="cube"> Cubed Wave<br><br>
+        <button id="update" onclick="Draw.updateValues()">Update Values</button>
+    </div>
+    <script src="template.js"></script>
+    <script src="sketch3.js"></script>
+</body>
+</html>
